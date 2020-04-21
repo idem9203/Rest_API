@@ -13,7 +13,7 @@ app.use(express.json());  //habilita la interpretacion de los paquetes JSON con 
 
 //Routes
 app.use(require('./routes/index')); //llama funciones de otros archivos
-app.use('/api/movies', require('./routes/movies'));
+app.use('/api/idem', require('./routes/devices'));
 
 //Starting the server
 app.listen(app.get('port'), () => {

@@ -1,15 +1,16 @@
 [
     {
         "id": "1",
-        "tittle": "Aliens",
-        "director": "James Cameron",
-        "year": "1986",
-        "ratin": "8.5" },
+        "instrument": "IDEM_V1.5",
+        "digitalInput0": "1.0",
+        "digitalInput1": "0.0",
+        "AnalogInput1": "3.5" 
+    },
     {
         "id": "2",
-        "tittle": "The Darh Knight",
-        "director": "Cristopher Nolan",
-        "year": "2008",
-        "ratin": "10"
+        "instrument": "IDEM_V1.5",
+        "digitalInput0": "0.0",
+        "digitalInput1": "1.0",
+        "AnalogInput1": "1.5"
     }
 ]
