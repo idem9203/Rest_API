@@ -2,7 +2,7 @@ const { Router } = require("express");
 const router = Router();
 const _ = require('underscore');
 
-const devices = require("../sample.json");
+const devices = require("../parametros_devices.json");
 //console.log(movies);
 
 router.get('/', (req, res) => {
@@ -27,7 +27,7 @@ router.put('/:id', (req, res) => {
     const { id } = req.params;
     const { instrument, digitalInput0, digitalInput1, AnalogInput1 } = req.body;
     if (instrument && digitalInput0 && digitalInput1 && AnalogInput1) {
-        _.each(divices, (device, i) => {
+        _.each(devices, (device, i) => {
             if (device.id == id) {
                 device.instrument = instrument;
                 device.digitalInput0 = digitalInput0;
