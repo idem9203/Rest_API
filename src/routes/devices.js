@@ -15,7 +15,7 @@ router.post('/', (req, res) => {
     if (instrument && digitalInput0 && digitalInput1 && AnalogInput1) {
         const id = devices.length + 1;
         const newDevice = {...req.body, id};
-        //console.log(newMovie);
+        //console.log(newDevice);
         devices.push(newDevice);
         res.json(devices);
     } else {
